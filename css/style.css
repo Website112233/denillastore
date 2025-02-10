@@ -1,0 +1,470 @@
+/* ====== GLOBAL STYLING (Berlaku untuk semua halaman) ====== */
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--bg);
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ====== STYLING UNTUK HALAMAN LOGIN ====== */
+#bg-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.box-login {
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+} 
+.box-login h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.input-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.btn {
+    padding: 8px 15px;
+    background-color: mediumpurple;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* ====== HEADER (Berlaku untuk semua halaman) ====== */
+header {
+    background-color: mediumpurple;
+    color: #fff;
+}
+header h1 {
+    float: left;
+    padding: 10px 0;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding: 20px 0 20px 15px;
+    display: inline-block;
+}
+
+/* ====== FOOTER (Berlaku untuk semua halaman) ====== */
+.footer {
+    padding: 30px;
+    background-color: mediumpurple;
+    color: #fff;
+    text-align: center;
+}
+.footer h4 {
+    margin-bottom: 12px;
+    color: #e0e0ee;
+}
+.footer p {
+    margin-bottom: 12px;
+    color: #fff;
+}
+.footer small {
+    margin-top: 25px;
+    display: inline-block;
+}
+/* ====== STYLING UNTUK ADMIN.PHP ====== */
+.container{
+    width:80%;
+    margin: 0 auto;
+}
+.container:after {
+    content: '';
+    display:block;
+    clear: both;
+    
+}
+.section {
+    padding: 25px 0;
+}
+.box {
+    background-color:#fff;
+    border: 1px solid #5e3d8b;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+.box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Kotak produk pada index.php */
+.section {
+    padding: 25px 0;
+}
+.box {
+    background-color:#fff;
+    border: 1px solid #5e3d8b;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+.col-4 {
+    
+    width: 23%;
+    height: 360px;
+    float: left;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.col-4 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.col-4 .nama {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.col-4 .harga {
+    font-size: 18px;
+    font-weight: bold;
+    color: mediumpurple;
+    margin-bottom: 1px;
+}
+.col-4:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Form pencarian produk di index.php */
+.search {
+    padding: 15px 0;
+    background-color: #fff;
+    text-align: center;
+    border: none; /* Hapus border di container */
+    
+}
+.search input[type=text] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.search input[type=submit] {
+    padding: 12px 15px;
+    background-color: mediumpurple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    text-align: center;
+}
+.search input[type="submit"]:hover {
+    background-color: #5e3d8b;
+}
+.col-5 {
+    width: 23%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* Form Detail produk di index.php */
+.col-2 {
+    width: 50%;
+    min-height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.col-2 img{
+    border: 1px solid #f9f9f9;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-2 h3 {
+    margin-bottom: 10px;
+}
+.col-2 h4 {
+    color: mediumpurple;
+}
+.col-2 p {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 14px;
+}
+/* ====== STYLING UNTUK CART.PHP ====== */
+/* Mengatur tata letak item dalam keranjang */
+
+/* Bagian keranjang belanja */
+
+h3 {
+    text-align: center;
+    color: #6a4c9c; /* Warna untuk judul */
+    margin-bottom: 30px;
+}
+
+/* Box utama (background dan border) */
+
+/* Tabel keranjang belanja */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #9370DB; /* Medium Purple */
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table td input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+table a {
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Tombol update keranjang dan pembayaran */
+input[type="submit"]{
+    background-color: #5e3d8b; /* Medium Purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+
+}
+input[type="submit"]:hover,
+button:hover {
+    background-color: #5e3d8b; /* Warna lebih gelap saat hover */
+}
+a button {
+    background-color: #5e3d8b; /* Medium Purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0.1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+
+
+}
+/* Styling untuk formulir checkout */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+
+}
+form label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+form input[type="radio"] {
+    margin-right: 10px;
+    background-color: #5e3d8b;
+}
+form input[type="submit"] {
+    background-color: #5e3d8b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+form input[type="submit"]:hover {
+    background-color: #5e3d8b;
+}
+/* Menambahkan padding pada input dan textarea */
+.box input[type="text"], 
+.box input[type="email"], 
+.box input[type="submit"],
+.box select,
+.box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Border standar */
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Gaya untuk textarea agar lebih luas dan nyaman digunakan */
+.box textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Tombol Konfirmasi Pesanan */
+.box input[type="submit"] {
+    background-color:#5e3d8b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Lebar tombol penuh */
+}
+
+.box input[type="submit"]:hover {
+    background-color: #5e3d8b; /* Warna saat tombol dihover */
+}
+
+/* Menambahkan gaya untuk error message */
+.box p[style="color: red;"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Gaya untuk total harga checkout */
+h4.total-price {
+    font-size: 22px;
+    color: #6a4c9c;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+}
+/* Gaya untuk Data Pembeli */
+h4 {
+    font-size: 20px;
+    color: #6a4c9c;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+p strong {
+    color: #000000; /* Medium Purple */
+    font-weight: bold;
+}
+/* Gaya untuk Pesan Pesanan Berhasil */
+h3 {
+    font-size: 28px;
+    color: #6a4c9c; /* Medium Purple */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk Judul Pesan */
+h4 {
+    font-size: 22px;
+    color: #6a4c9c; /* Medium Purple */
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Gaya untuk Pesan Terima Kasih */
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Tambahkan gaya untuk tombol "Tambah ke Keranjang" */
+button {
+    background-color: #6a4c9c;  /* Warna latar belakang tombol */
+    color: white;                   /* Warna teks */
+    border: none;                   /* Hilangkan border */
+    padding: 10px 20px;             /* Padding untuk tombol */
+    font-size: 13px;                /* Ukuran font */
+    cursor: pointer;               /* Menampilkan kursor pointer saat hover */
+    border-radius: 5px;             /* Sudut tombol menjadi melengkung */
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+    margin-top: 15px;
+    
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #9370DB; /* Warna latar belakang saat tombol di-hover */
+    opacity: 0.9;  /* Menambah efek transparansi */
+}  
